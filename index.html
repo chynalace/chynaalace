@@ -3,373 +3,328 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name | UGC Creator</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700r:wght@300;400;500;600&display=swap
+<title>Chyna-Lace Bailey | UGC Creator</title>
+
+https://fonts.googleapis.com
+<link //fonts.gstatic.com
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;swap
 
 <style>
+
 :root{
-    --pink:#FFD6E8;
-    --blue:#D8F3FF;
-    --yellow:#FFF0B8;
-    --cream:#FFFDF8;
-    --text:#292929;
+--pink:#ffdce8;
+--blue:#dff4ff;
+--yellow:#fff5c7;
+--text:#1d1d1d;
 }
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-    background:var(--cream);
-    font-family:'Inter',sans-serif;
-    overflow-x:hidden;
-    color:var(--text);
-}
-
-.background-blob{
-    position:fixed;
-    border-radius:50%;
-    filter:blur(100px);
-    z-index:-1;
-    opacity:.6;
-}
-
-.blob1{
-    width:400px;
-    height:400px;
-    background:var(--pink);
-    top:-100px;
-    left:-100px;
-}
-
-.blob2{
-    width:350px;
-    height:350px;
-    background:var(--blue);
-    right:-100px;
-    top:300px;
-}
-
-.blob3{
-    width:300px;
-    height:300px;
-    background:var(--yellow);
-    bottom:-100px;
-    left:40%;
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    padding:30px 8%;
-    align-items:center;
-}
-
-.logo{
-    font-family:'Playfair Display';
-    font-size:1.5rem;
-    font-weight:700;
-}
-
-.nav-links{
-    display:flex;
-    gap:30px;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:#333;
-}
-
-.hero{
-    min-height:85vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:40px;
-}
-
-.hero-content{
-    max-width:850px;
-}
-
-.hero h1{
-    font-family:'Playfair Display';
-    font-size:5rem;
-    line-height:1;
-    margin-bottom:20px;
-}
-
-.hero span{
-    background:linear-gradient(90deg,#ff91c6,#8ad9ff,#ffd76f);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.hero p{
-    font-size:1.2rem;
-    line-height:1.8;
-    color:#555;
-    max-width:700px;
-    margin:auto;
-}
-
-.buttons{
-    margin-top:35px;
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    padding:15px 28px;
-    border-radius:50px;
-    border:none;
-    cursor:pointer;
-    font-size:1rem;
-    text-decoration:none;
-}
-
-.primary{
-    background:#111;
-    color:white;
-}
-
-.secondary{
-    background:white;
-    color:#111;
+font-family:Inter,sans-serif;
+background:
+linear-gradient(
+180deg,
+#fffafc 0%,
+#fffdf8 50%,
+#fffffd 100%
+);
+color:var(--text);
 }
 
 section{
-    padding:100px 10%;
+padding:120px 10%;
 }
 
-.section-title{
-    text-align:center;
-    font-family:'Playfair Display';
-    font-size:3rem;
-    margin-bottom:60px;
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
 
-.stats{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:25px;
+.hero-content{
+max-width:950px;
 }
 
-.stat{
-    background:white;
-    padding:30px;
-    border-radius:24px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
+.hero h1{
+font-family:"Cormorant Garamond",serif;
+font-size:7rem;
+font-weight:500;
+line-height:0.9;
+margin-bottom:40px;
 }
 
-.stat h2{
-    font-size:2.2rem;
+.highlight{
+background:linear-gradient(
+90deg,
+#ff9dbc,
+#9ed8ff,
+#ffe168
+);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
-.portfolio-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+.hero p{
+font-size:1.25rem;
+line-height:1.9;
+max-width:750px;
+margin:auto;
+color:#555;
 }
 
-.card{
-    background:white;
-    border-radius:28px;
-    overflow:hidden;
-    transition:.3s;
-    box-shadow:0 10px 25px rgba(0,0,0,.06);
+.scroll{
+margin-top:60px;
+letter-spacing:3px;
+font-size:12px;
+text-transform:uppercase;
 }
 
-.card:hover{
-    transform:translateY(-10px);
+.image-section{
+background:var(--pink);
 }
 
-.card img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
+.image-wrap{
+max-width:900px;
+margin:auto;
 }
 
-.card-content{
-    padding:20px;
+.image-wrap img{
+width:100%;
+border-radius:30px;
+display:block;
 }
 
-.testimonial{
-    background:white;
-    border-radius:30px;
-    padding:40px;
-    max-width:800px;
-    margin:auto;
-    text-align:center;
-    font-size:1.15rem;
-    line-height:1.8;
+.text-section{
+text-align:center;
+max-width:900px;
+margin:auto;
 }
 
-.cta{
-    text-align:center;
-    background:linear-gradient(
-        135deg,
-        rgba(255,214,232,.7),
-        rgba(216,243,255,.7),
-        rgba(255,240,184,.7)
-    );
-    border-radius:40px;
-    padding:80px 40px;
+.text-section h2{
+font-family:"Cormorant Garamond",serif;
+font-size:4rem;
+margin-bottom:30px;
 }
 
-.cta h2{
-    font-family:'Playfair Display';
-    font-size:3rem;
-    margin-bottom:20px;
+.text-section p{
+font-size:1.2rem;
+line-height:2;
+color:#555;
 }
 
-footer{
-    padding:40px;
-    text-align:center;
-    color:#666;
+.testimonials{
+background:var(--blue);
+}
+
+.quote{
+max-width:850px;
+margin:auto;
+font-size:1.5rem;
+line-height:1.9;
+text-align:center;
+font-family:"Cormorant Garamond",serif;
+margin-bottom:80px;
+}
+
+.work-section{
+padding-top:140px;
+}
+
+.work-heading{
+text-align:center;
+font-size:4rem;
+font-family:"Cormorant Garamond",serif;
+margin-bottom:70px;
+}
+
+.work-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.work-card img{
+width:100%;
+height:450px;
+object-fit:cover;
+border-radius:22px;
+}
+
+.work-card p{
+margin-top:15px;
+font-size:15px;
+}
+
+.socials{
+background:var(--yellow);
+text-align:center;
+}
+
+.socials h2{
+font-family:"Cormorant Garamond",serif;
+font-size:4rem;
+margin-bottom:30px;
+}
+
+.social-links{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.social-links a{
+font-size:1.1rem;
+color:#111;
+text-decoration:none;
+}
+
+.footer{
+text-align:center;
+padding:60px;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-    font-size:3rem;
+font-size:4rem;
 }
 
-.section-title{
-    font-size:2.2rem;
+.text-section h2,
+.socials h2,
+.work-heading{
+font-size:2.8rem;
 }
 
 }
+
 </style>
 </head>
 
 <body>
 
-<div class="background-blob blob1"></div>
-<div class="background-blob blob2"></div>
-<div class="background-blob blob3"></div>
-
-<nav>
-    <div class="logo">your name ✨</div>
-
-    <div class="nav-links">
-        #Portfolio</a>
-        <Results</a>
-        #Contact</a>
-    </div>
-</nav>
-
 <section class="hero">
-    <div class="hero-content">
-        <h1>
-            Creating <span>content people actually stop for.</span>
-        </h1>
 
-        <p>
-            UGC Creator • Influencer • Storyteller
+<div class="hero-content">
 
-            I help brands turn views into trust through
-            relatable, aesthetic and high-converting content.
-            From skincare and beauty to lifestyle and travel,
-            I create videos that feel authentic while driving results.
-        </p>
+<h1>
+Chyna-Lace<br>
+<span class="highlight">Bailey</span>
+</h1>
 
-        <div class="buttons">
-            #View Portfolio</a>
-            #Media Kit</a>
-        </div>
-    </div>
+<p>
+UGC Creator • Storyteller • Influencer
+
+I create content people actually remember.
+Through authentic storytelling, trend-driven creativity and visually engaging content, I help brands connect with audiences in a way that feels genuine, relatable and impactful.
+</p>
+
+<div class="scroll">
+scroll ↓
+</div>
+
+</div>
+
+</section>
+
+<section class="image-section">
+
+<div class="image-wrap">
+
+YOUR-HERO-PHOTO.jpg
+
+</div>
+
 </section>
 
 <section>
-    <h2 class="section-title">by the numbers</h2>
 
-    <div class="stats">
-        <div class="stat">
-            <h2>1M+</h2>
-            <p>Total Views</p>
-        </div>
+<div class="text-section">
 
-        <div class="stat">
-            <h2>50+</h2>
-            <p>Brand Collaborations</p>
-        </div>
+<h2>Creating content that feels real.</h2>
 
-        <div class="stat">
-            <h2>8%</h2>
-            <p>Avg Engagement</p>
-        </div>
-    </div>
+<p>
+From lifestyle and travel to beauty, fashion and everyday storytelling, I create content designed to build trust, increase engagement and inspire action while remaining authentic to your brand.
+</p>
+
+</div>
+
 </section>
 
-<section>
-    <h2 class="section-title">featured work</h2>
+<section class="testimonials">
 
-    <div class="portfolio-grid">
+<div class="quote">
+"Chyna-Lace delivered beautifully crafted content that felt authentic, engaging and perfectly aligned with our brand."
+</div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1521572267360-18?w=900
-            <div class="card-content">
-                <h3>Beauty UGC</h3>
-                <p>Reviews, tutorials, aesthetic product videos.</p>
-            </div>
-        </div>
+<div class="quote">
+"Professional, creative and incredibly easy to work with. Every piece of content exceeded expectations."
+</div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900"  <div class="card-content">
-                <h3>Lifestyle Content</h3>
-                <p>Authentic storytelling and daily-life content.</p>
-            </div>
-        </div>
+<div class="quote">
+"The final deliverables felt natural, polished and performed exceptionally well across social platforms."
+</div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603            <div class="card-content">
-                <h3>Fashion & Travel</h3>
-                <p>Premium visuals with a relatable feel.</p>
-            </div>
-        </div>
-
-    </div>
 </section>
 
-<section>
-    <h2 class="section-title">what brands say</h2>
+<section class="work-section">
 
-    <div class="testimonial">
-        “The content felt natural, beautiful and incredibly
-        engaging. Our campaign performed above expectations
-        and the videos blended seamlessly into our audience's feeds.”
-    </div>
+<h2 class="work-heading">
+Featured Work
+</h2>
+
+<div class="work-grid">
+
+<div class="work-card">
+photo1.jpg
+<p>Beauty & Skincare</p>
+</div>
+
+<div class="work-card">
+photo2.jpg
+<p>Lifestyle Content</p>
+</div>
+
+<div class="work-card">
+photo3.jpg
+<p>Travel & Hospitality</p>
+</div>
+
+</div>
+
 </section>
 
-<section>
-    <div class="cta">
-        <h2>Let's create something unforgettable.</h2>
+<section class="socials">
 
-        <p>
-            Available for UGC, brand partnerships,
-            TikTok, Instagram Reels and product campaigns.
-        </p>
+<h2>Let's Create Together</h2>
 
-        <br>
+<div class="social-links">
 
-        hello@yourname.com
-            Work With Me
-        </a>
-    </div>
+#Instagram</a>
+#TikTok</a>
+#YouTube</a>
+#Email</a>
+
+</div>
+
 </section>
 
-<footer>
-    © 2026 Your Name • UGC Creator
-</footer>
+<div class="footer">
+© 2026 Chyna-Lace Bailey
+</div>
 
 </body>
 </html>
